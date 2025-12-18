@@ -7,7 +7,7 @@ export const AssistantMessageSchema = z.object({
   conversationId: z.string().uuid().optional(),
   text: z.string().min(1),
   mode: z.enum(["text", "voice"]),
-  metadata: z.record(z.any()).optional(),
+  metadata: z.record(z.string(), z.any()).optional(),
 });
 export type AssistantMessage = z.infer<typeof AssistantMessageSchema>;
 
