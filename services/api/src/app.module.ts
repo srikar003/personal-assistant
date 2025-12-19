@@ -4,8 +4,10 @@ import { AuthModule } from './modules/auth/auth.module';
 import { CalendarModule } from './modules/calendar/calendar.module';
 import { AssistantModule } from './modules/assistant/assistant.module';
 import { ActionsModule } from './modules/actions/actions.module';
+import { HealthController } from './health.controller';
 
 @Module({
+  controllers: [HealthController],
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     AuthModule,

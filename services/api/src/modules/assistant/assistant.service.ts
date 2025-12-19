@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 export class AssistantService {
   async handleMessage(dto: any) {
     return {
-      replyText: 'Here’s what I can do. Please confirm.',
+      replyText: 'Hi Srikar, how are you doing',
       requiresConfirmation: false,
       proposedActions: [],
     };

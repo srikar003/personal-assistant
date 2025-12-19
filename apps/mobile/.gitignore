@@ -36,6 +36,15 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-# generated native folders
+# Ignore android/ios ONLY if they are not used
+# We are using dev-client, so DO NOT ignore android
+# /android
 /ios
-/android
+
+# Usual ignores
+node_modules
+.expo
+android/app/.cxx/
+android/app/build/
+android/.gradle/
+android/build/
